@@ -2,7 +2,7 @@
 fn test_invert_case() {
     let data = [
         ("Hello", "hELLO"),
-        ("lalaLA", "LALAla"),
+        ("dadaDA", "DAdADa"),
     ];
 
     data
