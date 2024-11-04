@@ -14,6 +14,7 @@ fn test()
         (-10,"cdefghab"),
     ];
 
+
     shifts
         .iter()
         .for_each(|(n, exp)|
