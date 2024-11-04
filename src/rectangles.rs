@@ -32,7 +32,6 @@ fn area_occupied(xs: &Vec<Rectangle>) -> i32 {
     total_area - intersection_area_sum
 }
 
-
 fn test_data() -> Vec<Rectangle> {
     vec![
         Rectangle {
