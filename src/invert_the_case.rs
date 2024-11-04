@@ -1,17 +1,26 @@
 #[test]
 fn test_invert_case() {
-    let test_cases = [
+    let data = [
         ("Hello", "hELLO"),
         ("lalaLA", "LALAla"),
     ];
 
-    for &(input, expected) in &test_cases {
-        assert_eq!(invert_case(input), expected);
-        assert_eq!(invert_case(expected), input);
-    }
+    data
+        .iter()
+        .for_each(|(a, b)| {
+            assert_eq!(
+                invert_case(a.to_string()),
+                b.to_string()
+            );
+            assert_eq!(
+                invert_case(b.to_string()),
+                a.to_string()
+            );
+        });
+
 }
 
-fn invert_case(s: &str) -> String {
+fn invert_case(s: String) -> String {
     let mut result = String::new();
     for c in s.chars() {
         if c.is_lowercase() {
